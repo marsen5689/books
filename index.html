@@ -44,6 +44,7 @@
 
 <body>
     <div id="books" class="menu">
+        <button onclick="myFunction()">Try it</button>
         <div class="title">Books</div>
         <ul>
             <li>
@@ -77,7 +78,16 @@
 
         function showBook(event) {
             let title = event.target;
-            title.style.color
+            title.style.color="red";
+            let toShow = title.nextElementSibling;
+        //     if(toShow.classlist.contains("open")){
+        //         title.classList.remove("open");
+        //     }
+        //     else{
+        //         title.classList.add("open");
+        //     }
+        // }
+        title.classList.toggle("title");
         }
     </script>
 </body>
