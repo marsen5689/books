@@ -63,7 +63,14 @@ p.open {
         </div>
       </div>
       <script>
-          
+          let titles = document.getElementsByClassName("title");
+for (let i = 0; i < titles.length; i++) {
+  titles[i].onclick = showBook;
+}
+
+    function showBook(event){
+        let title = event.target;
+    }
       </script>
 </body>
 </html>
